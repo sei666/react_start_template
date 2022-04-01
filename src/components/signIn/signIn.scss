@@ -1,0 +1,205 @@
+@import "../../global-variable.scss";
+@import "../../patterns.scss";
+
+
+.signinFluid{
+    // background-color: rebeccapurple;
+
+    .signinDesktopRight{
+        // background-color: blue;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        // max-width: 530px;
+
+        .signinDesktopBlock{
+            width: 100%;
+            // max-width: 380px;
+            // text-align: center;
+            // background-color: rgb(154, 135, 222);
+
+            .marginTopCustom{
+                margin-top: 20px;
+            }
+
+            .textHeader{
+                font-size: 24px;
+                font-weight: bold;
+            }
+
+
+            .form-group{
+                position: relative;
+                margin-bottom: 0;
+                input:focus ~ .floating-label,
+                input:not(:focus):valid ~ .floating-label{
+                top: -10px;
+                left: 10px;
+                font-size: 11px;
+                opacity: 1;
+                // color: $colorText__white;
+                }
+                
+                .floating-label {
+                position: absolute;
+                pointer-events: none;
+                left: 10px;
+                top: 7px;
+                transition: 0.2s ease all;
+                color: $colorText__white-a;
+                background-color: $bodyColor;
+                padding: 0 5px;
+                user-select: none;
+                }
+                .floating-label__custom{
+                    top: -10px;
+                    left: 10px;
+                    font-size: 11px;
+                    opacity: 1;
+                    // color: $colorText__white;
+                }
+                // .form-error{
+                //     box-shadow: 0 0 0 2px rgba($color-red,1) !important;
+                // }
+
+                .--padding{
+                    padding: 0.375rem 3rem 0.375rem 0.75rem;
+                }
+
+                .showPasswordButton{
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    // background-color: rebeccapurple;
+                    height: 100%;
+                    width: 40px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    cursor: pointer;
+                    &:hover svg{
+                        fill: rgba($colorText__white-a, 1);
+                    }
+                    & svg{
+                        fill: rgba($colorText__white-a, .8);
+                        height: 20px;
+                        width: 20px;
+                        transition: .2s;
+                    }
+                }
+
+                .hideShowPasswordButton{
+                    display: none;
+                    opacity: 0;
+                    pointer-events: none;
+                    user-select: none;
+                }
+            
+            }
+            .form-control{
+                background-color: $bodyColor;
+                border: 1px solid $color-blue;
+            }
+            .form-group__error{
+                color: $colorText__white;
+                .form-control{
+                    box-shadow: 0 0 0 2px rgba($color-red,1) !important;
+                    padding: 0.375rem 37% 0.375rem 0.75rem;
+                }
+                &::after{
+                    // content: "Пароли не совпадают";
+                    content: attr(data-error);
+                    position: absolute;
+                    width: 35%;
+                    height: 100%;
+                    background-color: rgba($color-red, 1);
+                    top: 0;
+                    right: 0;
+                    pointer-events: none;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 13px;
+                    // padding: 0 5px;
+                    overflow: hidden;
+                    // transition: 0.2s ease width;
+                    white-space: nowrap;
+                    animation: form-error__text1 2.5s forwards;
+                    z-index: 1;
+                }
+                @keyframes form-error__text1 {
+                    0%{
+                        width: 0%;
+                    }
+                    10%{
+                        width: 35%;
+                    }
+                    90%{
+                        width: 35%;
+                    }
+                    100%{
+                        width: 0%;
+                    }
+                }
+            }
+
+            .colorA{
+                color: rgba($colorText__white,.5);
+            }
+
+            .blueButton{
+                height: 44px;
+                width: 100%;
+                @extend %blueButton;
+            }
+
+            // .inputLineBottom{
+            //     @extend %inputLineBottom;
+            // }
+
+            
+        }
+
+    }
+
+    .signinDesktopLeft{
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: column;
+        max-width: 750px;
+        // background-color: red;
+        & img{
+            width: 100%;
+        }
+        .textHeaderLeft{
+            font-size: 40px;
+            font-weight: 600;
+            margin: 80px 0;
+        }
+    }  
+
+
+}
+
+.bgBodySignin{
+    background-image: url(../media/singin/bgSingin.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media (max-width: 575.98px) {
+    .signinDesktopLeft{
+        align-items: center;
+        & img{
+            width: 50% !important;
+        }
+    }
+    .textHeaderLeft{
+        font-size: 30px !important;
+        margin: 20px 0 !important;
+
+    }
+    .signinDesktopBlock{
+        margin-bottom: 200px;
+    }
+}

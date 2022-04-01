@@ -1,25 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Start
-        </a>
-      </header>
-    </div>
-  );
-}
+import {
+  BrowserRouter as Router, Route, Routes,
+  useLocation
+} from "react-router-dom";
 
+import { WelcomePage } from "./components/welcomePage/welcomePage";
+import { Header } from "./components/header/header";
+import { Signin } from "./components/signIn/signIn";
+import { PanelMaster } from "./components/panel/panelMaster";
+
+
+const App = () => {
+
+  let location = useLocation();
+
+  return(
+          <>
+            {console.log('reload_app')}
+            {/* <RemoveScroll enabled={anyWindowIsOpen} className="w-100"> */}
+              <Header pathname = {location.pathname} />
+              {/* <Router> */}
+                <Routes>
+                  <Route path="/" exact element = {<WelcomePage/>}></Route>
+                  <Route path="/signin" exact element = {<Signin/>}></Route>
+                  <Route path="/panel" exact element = {<PanelMaster/>}></Route>
+                </Routes>
+              {/* </Router> */}
+            {/* </RemoveScroll> */}
+          </>
+      );
+  }
 export default App;

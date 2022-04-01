@@ -1,0 +1,444 @@
+// %customButton{
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   border-radius: $border-radius !important;
+//   background-color: transparent;
+//   box-shadow: 0 0 0 transparent;
+//   border: 0;
+//   outline: 0;
+//   &:hover{
+//       background-color: transparent !important;
+//       box-shadow: 0 0 0 transparent !important;
+//       // border: 0 !important; 
+//       outline: 0 !important;
+//   }
+//   &:focus{
+//       box-shadow: 0 0 0 transparent;
+//       background-color: transparent !important;
+//       // border: 0 !important;
+//       outline: 0 !important;
+//     }
+//   &:active{
+//       box-shadow: 0 0 0 0 transparent !important;
+//       background-color: transparent !important;
+//       // border: 0 !important;
+//       outline: 0 !important;
+//   }
+// }
+
+
+// %pinkbutton{
+//   // display: flex;
+//   // justify-content: center;
+//   // align-items: center;
+//   width: 100%;
+//   background-color: $color-pink;
+//   border-radius: $border-radius !important;
+//   color: $text-color;
+//   text-decoration: none;
+//   text-align: center;
+//   transition: .2s;
+//   padding: 8px;
+//   min-height: 44px;
+//   &:hover{
+//       background-color: $color-pink;
+//       box-shadow: 0 0 10px $color-pink; 
+//       color: $text-color;
+//       text-decoration: none;
+//   }
+//   &:focus{
+//       box-shadow: 0 0 10px $color-pink;
+//       background-color: $color-pink !important;
+//       color: $text-color;
+//       text-decoration: none;
+//     }
+//   &:active{
+//       box-shadow: 0 0 0 2px $color-pink !important;
+//       background-color: $color-pink !important;
+//       color: $text-color;
+//       text-decoration: none;
+//   }
+// }
+
+// %greenbutton{
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   // background-color: $color-green;
+//   border: 1px solid $color-green-a !important;
+//   border-radius: $border-radius !important;
+//   &:hover{
+//       background-color: $color-green-a;
+//       box-shadow: 0 0 10px $color-green-a; 
+//   }
+//   &:focus{
+//       box-shadow: 0 0 10px $color-green-a;
+//       background-color: $color-green-a !important;
+//     }
+//   &:active{
+//       box-shadow: 0 0 0 2px $color-green-a !important;
+//       background-color: $color-green-a !important;
+//   }
+// }
+
+// %blackButtonSearcPageMobile{
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   // margin: 20px;
+//   background-color: $bg-color;
+//   border-radius: $border-radius !important;
+//   &:hover{
+//       background-color: $color-pink;
+//       box-shadow: 0 0 10px $color-pink; 
+//   }
+//   &:focus{
+//       box-shadow: 0 0 10px $color-pink;
+//       background-color: $color-pink !important;
+//     }
+//   &:active{
+//       box-shadow: 0 0 0 2px $color-pink !important;
+//       background-color: $color-pink !important;
+//   }
+// }
+
+
+
+// %pinkborderbutton{
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   // margin: 20px;
+//   background-color: transparent;
+//   border-radius: $border-radius !important;
+//   border: 1px solid $color-pink !important;
+//   min-width: 150px;
+//   color: $text-color;
+//   text-decoration: none;
+//   transition: .2s;
+//   padding: 8px;
+//   min-height: 44px;
+//   &:hover{
+//       box-shadow: 0 0 10px $color-pink; 
+//       color: $text-color;
+//       text-decoration: none;
+//   }
+//   &:focus{
+//       box-shadow: 0 0 10px $color-pink;
+//       background-color: transparent;
+//       color: $text-color;
+//       text-decoration: none;
+//     }
+//   &:active{
+//       box-shadow: 0 0 0 2px $color-pink !important;
+//       background-color: transparent !important;
+//       color: $text-color;
+//       text-decoration: none;
+//   }
+// }
+
+
+// %pinkborderbuttonfeedupload{
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   // margin: 0;
+//   background-color: transparent;
+//   border-radius: $border-radius !important;
+//   border: 1px solid $color-pink !important;
+//   // min-width: 150px;
+//   color: $text-color;
+//   &:hover{
+//       box-shadow: 0 0 10px $color-pink; 
+//       color: $text-color;
+//   }
+//   &:focus{
+//       box-shadow: 0 0 10px $color-pink;
+//       background-color: transparent;
+//       color: $text-color;
+//     }
+//   &:active{
+//       box-shadow: 0 0 0 2px $color-pink !important;
+//       background-color: transparent !important;
+//       color: $text-color;
+//   }
+// }
+// %pinkborderbuttonfeedcancel{
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   margin: 0 15px;
+//   background-color: transparent;
+//   border-radius: $border-radius !important;
+//   // border: 1px solid $color-pink !important;
+//   // min-width: 150px;
+//   color: $text-color-a;
+//   &:hover{
+//       // box-shadow: 0 0 10px $color-pink; 
+//       color: $text-color;
+//   }
+//   &:focus{
+//       box-shadow: 0 0 0 transparent;
+//       background-color: transparent;
+//       color: $text-color;
+//     }
+//   &:active{
+//       // box-shadow: 0 0 0 2px $color-pink !important;
+//       background-color: transparent !important;
+//       color: $text-color;
+//   }
+// }
+
+
+
+// %arrowwelcomepage{
+//     border-radius: 0 $border-radius $border-radius 0 !important;
+//     &:hover{
+//       box-shadow:  0px 0px 10px 0px $color-pink !important; 
+//   }
+//   &:focus{
+//       box-shadow: 0 0 10px transparent;
+//       background-color: transparent;
+//     }
+//   &:active{
+//       box-shadow: 0 0 0 2px transparent !important;
+//       background-color: transparent !important;
+//   }
+// }
+
+
+// %link{
+//   color: $text-color;
+//   cursor: pointer;
+//   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+//   &:hover{
+//     text-decoration: none !important;
+//     color: $color-pink !important; 
+// }
+// &:focus{
+//     text-decoration: none;
+//     box-shadow: 0 0 0 2px transparent !important;
+//     background-color: transparent;
+//   }
+// &:active{
+//     text-decoration: none;
+//     box-shadow: 0 0 0 2px transparent !important;
+//     background-color: transparent !important;
+// }
+// }
+
+// %linkA{
+//   color: $color-blue;
+//   cursor: pointer;
+//   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+//   &:hover{
+//     text-decoration: none !important;
+//     color: $color-blue-s !important; 
+// }
+// // &:focus{
+// //     text-decoration: none;
+// //     box-shadow: 0 0 0 2px transparent !important;
+// //     background-color: transparent;
+// //   }
+// // &:active{
+// //     text-decoration: none;
+// //     box-shadow: 0 0 0 2px transparent !important;
+// //     background-color: transparent !important;
+// // }
+// }
+
+
+// %inputwelcomepage{
+//   border-radius: $border-radius 0 0 $border-radius !important;
+//   color: $text-color;
+//   &:hover{
+//     box-shadow:  0px 0px 10px 0px $color-pink; 
+// }
+// &:focus{
+//     box-shadow: 0 0 10px $color-pink;
+//     background-color: transparent;
+//     color: $text-color;
+//   }
+// &:active{
+//     box-shadow: 0 0 0 2px transparent !important;
+//     background-color: transparent !important;
+//     color: $text-color;
+// }
+// }
+
+// %inputwelcomepageactiveautocomplete{
+//   border-radius: $border-radius $border-radius 0 0 !important;
+//   &:hover{
+//     box-shadow:  0px 0px 10px 0px $color-pink !important;
+//   }
+//   .inputwelcomepage:hover,.arrowwelcomepage:hover{
+//     box-shadow: 0 0 0 2px transparent !important;
+//   }
+//   .inputwelcomepage:focus,.arrowwelcomepage:focus{
+//     box-shadow: 0 0 0 2px transparent !important;
+//   }
+//   .inputwelcomepage:active,.arrowwelcomepage:active{
+//     box-shadow: 0 0 0 2px transparent !important;
+//   }
+// }
+
+
+// %autocomplete{
+//     // display: none;
+//     background-color: $bg-color;
+//     width: 100%;
+//     top: 40px;
+//     left: 0;
+//     position: absolute;
+//     border-radius: 0 0 $border-radius $border-radius;
+//     margin-top: -1px;
+//     z-index: 1;
+//     box-shadow: 0 1px 5px 0 $color-pink;
+
+// }
+
+
+// %inputLineBottom{
+//   border: 1px solid rgba($color-pink,0.5) !important;
+//   color: $text-color;
+//   border-radius: 5px !important;
+// &:focus{
+//     box-shadow: 0 0 0 2px rgba($color-pink,1) !important;
+//     background-color: transparent;
+//     color: $text-color;
+//   }
+// &:valid{
+//     box-shadow: 0 0 0 2px rgba($color-pink,1) !important;
+//     background-color: transparent;
+//     color: $text-color;
+//   }
+// }
+
+// // ---------------------------Feeds------------------
+
+// %deletebutton{
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   // margin: 0.5rem 0 0 0;
+//   padding: 5px;
+//   font-size: 12px;
+//   min-width: 100px;
+//   color: $text-color;
+//   border: 1px solid $color-red-a !important;
+//   background-color: $color-red-a;
+//   // background: linear-gradient(90deg, $color-red-a 0%, $color-red 100%);
+//   border-radius: $border-radius !important;
+//   z-index: 1;
+//   &:hover{
+//       background-color: $color-red;
+//       // background: linear-gradient(90deg, $color-red 0%, $color-red 100%);
+//       box-shadow: 0 0 10px $color-red; 
+//   }
+//   &:focus{
+//       box-shadow: 0 0 10px $color-red;
+//       background-color: $color-red !important;
+//       // background: linear-gradient(90deg, $color-red 0%, $color-red 100%);
+//     }
+//   &:active{
+//       box-shadow: 0 0 0 2px $color-red !important;
+//       background-color: $color-red !important;
+//       // background: linear-gradient(90deg, $color-red 0%, $color-red 100%);
+//   }
+// }
+// %cancelbutton{
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   margin: 0.5rem 0 0 0;
+//   padding: 5px;
+//   font-size: 12px;
+//   min-width: 100px;
+//   color: $text-color;
+//   border: 1px solid $color-red-a !important;
+//   // background-color: $color-red-a;
+//   // background: linear-gradient(90deg, $color-red-a 0%, $color-red 100%);
+//   border-radius: $border-radius !important;
+//   &:hover{
+//       background-color: $color-red;
+//       // background: linear-gradient(90deg, $color-red 0%, $color-red 100%);
+//       box-shadow: 0 0 10px $color-red; 
+//   }
+//   &:focus{
+//       box-shadow: 0 0 10px $color-red;
+//       background-color: $color-red !important;
+//       // background: linear-gradient(90deg, $color-red 0%, $color-red 100%);
+//     }
+//   &:active{
+//       box-shadow: 0 0 0 2px $color-red !important;
+//       background-color: $color-red !important;
+//       // background: linear-gradient(90deg, $color-red 0%, $color-red 100%);
+//   }
+// }
+
+@import "./global-variable.scss";
+
+%loginButton{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: $border-radius !important;
+  background-color: $colorButton__blue;
+  box-shadow: 0 0 0 transparent;
+  border: 0;
+  outline: 0;
+  color: $colorText__white;
+  cursor: pointer;
+  transition: .2s;
+  user-select: none;
+  text-decoration: none;
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  &:hover{
+      box-shadow: 0 0 10px $colorButton__blue !important;
+      outline: 0 !important;
+  }
+  &:focus{
+      box-shadow: 0 0 0 transparent;
+      outline: 0 !important;
+    }
+  &:active{
+      box-shadow: 0 0 0 0 transparent !important;
+      outline: 0 !important;
+  }
+}
+
+%blueButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: $border-radius !important;
+    background-color: $color-blue;
+    box-shadow: 0 0 0 transparent;
+    border: 0;
+    outline: 0;
+    color: $colorText__white;
+    cursor: pointer;
+    transition: .2s;
+    user-select: none;
+    text-decoration: none;
+  
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  
+    &:hover{
+        box-shadow: 0 0 10px $color-blue !important;
+        outline: 0 !important;
+    }
+    &:focus{
+        box-shadow: 0 0 0 transparent;
+        outline: 0 !important;
+      }
+    &:active{
+        box-shadow: 0 0 0 0 transparent !important;
+        outline: 0 !important;
+    }
+}
